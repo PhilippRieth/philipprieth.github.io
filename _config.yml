@@ -116,6 +116,9 @@ defaults:
       comments: false
       share: true
       related: true
+      show_date: true
+      header:
+        teaser: /assets/images/icons/favicon-250x250.png
   # _pages
   - scope:
       path: "_pages"
