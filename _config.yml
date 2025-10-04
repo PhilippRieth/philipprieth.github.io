@@ -73,8 +73,7 @@ author:
   name             : "Philipp Rieth" 
   bio              : >
     Cybersecurity expert and penetration tester, blending offensive and defensive security to protect critical infrastructure from threats. 
-    Hacking systems before the bad guys do and guiding teams to secure them effectively.<br/><br/>
-    On this site, I share real-world stories, hands-on tutorials and practical insights on hacking, defending, and securing IT environments.
+    Hacking systems before the bad guys do and guiding teams to secure them effectively.
   avatar           : "assets/images/profile/thisisme.png"
   location         : "Melbourne, Australia"
   employer         : "Emerging IT, Melbourne"
@@ -118,7 +117,7 @@ defaults:
       related: true
       show_date: true
       header:
-        teaser: /assets/images/icons/favicon-250x250.png
+        teaser: /assets/images/icons/favicon-444x250.png
   # _pages
   - scope:
       path: "_pages"

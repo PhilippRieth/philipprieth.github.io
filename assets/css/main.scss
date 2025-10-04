@@ -1,43 +1,24 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+@charset "utf-8";
 
-@import
-    "vendor/breakpoint/breakpoint",
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+html {
+  @include breakpoint($large) {
+    font-size: 19px;
+  }
 
-    "include/mixins",
-    "vendor/susy/susy",
+  @include breakpoint($x-large) {
+    font-size: 20px;
+  }
+}
 
-    "layout/reset",
-    "layout/base",
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+article.page {
+  text-align: justify;
+}
