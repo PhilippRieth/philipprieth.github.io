@@ -1,5 +1,9 @@
 _site
 _drafts
-.sass-cache
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
 Gemfile.lock
+.bundle/
+vendor/
+.obsidian/
